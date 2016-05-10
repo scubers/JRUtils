@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAB7C9B1CE18CB100780D06 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9A1CE18CB100780D06 /* TestViewController.m */; };
+		5AAB7C9D1CE18CFF00780D06 /* UIColor+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */; };
+		5AAB7C9F1CE18DEB00780D06 /* JRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9E1CE18DEB00780D06 /* JRUtil.swift */; };
 		A82609611CE0C4E900A522A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609601CE0C4E900A522A1 /* AppDelegate.swift */; };
 		A82609631CE0C4E900A522A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609621CE0C4E900A522A1 /* ViewController.swift */; };
 		A82609661CE0C4E900A522A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82609641CE0C4E900A522A1 /* Main.storyboard */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AAB7C991CE18CB100780D06 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		5AAB7C9A1CE18CB100780D06 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+jex.swift"; sourceTree = "<group>"; };
+		5AAB7C9E1CE18DEB00780D06 /* JRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRUtil.swift; sourceTree = "<group>"; };
+		5AAB7CA01CE18E0700780D06 /* JRUtils-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRUtils-Bridging-Header.h"; sourceTree = "<group>"; };
 		A826095D1CE0C4E900A522A1 /* JRUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82609601CE0C4E900A522A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82609621CE0C4E900A522A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +104,9 @@
 				A82609801CE0C52900A522A1 /* JRUtils */,
 				A82609601CE0C4E900A522A1 /* AppDelegate.swift */,
 				A82609621CE0C4E900A522A1 /* ViewController.swift */,
+				5AAB7C991CE18CB100780D06 /* TestViewController.h */,
+				5AAB7C9A1CE18CB100780D06 /* TestViewController.m */,
+				5AAB7CA01CE18E0700780D06 /* JRUtils-Bridging-Header.h */,
 				A82609641CE0C4E900A522A1 /* Main.storyboard */,
 				A82609671CE0C4E900A522A1 /* Assets.xcassets */,
 				A82609691CE0C4E900A522A1 /* LaunchScreen.storyboard */,
@@ -119,6 +130,7 @@
 				A82609821CE0C5C600A522A1 /* Discardable */,
 				A82609811CE0C52900A522A1 /* Extensions */,
 				A82609911CE0D29C00A522A1 /* PublicMethod.swift */,
+				5AAB7C9E1CE18DEB00780D06 /* JRUtil.swift */,
 			);
 			path = JRUtils;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 				A826098B1CE0C99600A522A1 /* NSDate+jex.swift */,
 				A826098D1CE0D17A00A522A1 /* Int+jex.swift */,
 				A826098F1CE0D1C000A522A1 /* String+jex.swift */,
+				5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,11 +260,14 @@
 			files = (
 				A82609841CE0C5D600A522A1 /* Discardable.swift in Sources */,
 				A826098C1CE0C99600A522A1 /* NSDate+jex.swift in Sources */,
+				5AAB7C9F1CE18DEB00780D06 /* JRUtil.swift in Sources */,
 				A82609881CE0C89C00A522A1 /* UIView+jex.swift in Sources */,
+				5AAB7C9D1CE18CFF00780D06 /* UIColor+jex.swift in Sources */,
 				A82609631CE0C4E900A522A1 /* ViewController.swift in Sources */,
 				A826098A1CE0C92600A522A1 /* CGRect+jex.swift in Sources */,
 				A826098E1CE0D17A00A522A1 /* Int+jex.swift in Sources */,
 				A82609611CE0C4E900A522A1 /* AppDelegate.swift in Sources */,
+				5AAB7C9B1CE18CB100780D06 /* TestViewController.m in Sources */,
 				A82609901CE0D1C000A522A1 /* String+jex.swift in Sources */,
 				A82609861CE0C71A00A522A1 /* NSObject+jex.swift in Sources */,
 				A82609921CE0D29C00A522A1 /* PublicMethod.swift in Sources */,
@@ -385,10 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JRUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jrwong.JRUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JRUtils/JRUtils-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -396,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JRUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jrwong.JRUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JRUtils/JRUtils-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -446,6 +467,7 @@
 				A826097C1CE0C4E900A522A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A826097D1CE0C4E900A522A1 /* Build configuration list for PBXNativeTarget "JRUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +476,7 @@
 				A826097F1CE0C4E900A522A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

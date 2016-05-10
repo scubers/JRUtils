@@ -8,20 +8,24 @@
 
 import Foundation
 
-private var key = "jex_discardBag"
+private var jex_discardBagKey = "jex_discardBagKey"
 
 public extension NSObject {
     var jex_discardBag: DiscardBag {
-        set {
-            objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
         get {
-            guard let bag = objc_getAssociatedObject(self, &key) else {
+            guard let bag = objc_getAssociatedObject(self, &jex_discardBagKey) else {
                 let bag = DiscardBag()
-                objc_setAssociatedObject(self, &key, bag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(self, &jex_discardBagKey, bag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 return bag
             }
             return bag as! DiscardBag
         }
+    }
+}
+
+internal var jex_deallocatedKey = "jex_deallocatedKey"
+extension NSObject {
+    public func jex_deallocated(with block: dispatch_block_t) {
+        self.jex_discardBag.block = block
     }
 }

@@ -10,24 +10,29 @@ import Foundation
 
 private var jex_componentsKey: String = "jex_componentsKey"
 
-public let yyyy_MM_dd: String = "yyyy-MM-dd"
-public let yyyy_MM_dd_HH_mm_ss: String = "yyyy-MM-dd HH:mm:ss"
 
 public extension NSDate {
-
+    
+    public static var fmt_yyyy_MM_dd: String {
+        get { return "yyyy-MM-dd"}
+    }
+    public static var fmt_yyyy_MM_dd_HH_mm_ss: String {
+        get {return "yyyy-MM-dd HH:mm:ss"}
+    }
+    
     // MARK: - format and parse
     public func jex_format(format: String) -> String? {
         let f = NSDateFormatter()
         f.dateFormat = format
         return f.stringFromDate(self)
     }
-
+    
     public class func jex_parse(string: String, with format: String) -> NSDate? {
         let f = NSDateFormatter()
         f.dateFromString(format)
         return f.dateFromString(string)
     }
-
+    
     // MARK: - components
     public var jex_dateComponent: NSDateComponents {
         get {
@@ -42,7 +47,7 @@ public extension NSDate {
                         .Hour,
                         .Minute,
                         .Second,
-
+                        
                         .WeekOfYear,
                         .WeekOfMonth,
                     ], fromDate: self)
@@ -51,7 +56,7 @@ public extension NSDate {
             return components!
         }
     }
-
+    
     public var jex_year: Int {
         return jex_dateComponent.year
     }
@@ -82,7 +87,7 @@ public extension NSDate {
     public var jex_weekOfMonth: Int {
         return jex_dateComponent.weekOfMonth
     }
-
+    
     public var jex_tomorrow: NSDate {
         get {
             return NSDate(timeInterval: 3600 * 24, sinceDate: self)
@@ -93,7 +98,7 @@ public extension NSDate {
             return NSDate(timeInterval: -3600 * 24, sinceDate: self)
         }
     }
-
+    
     public var jex_isLeapYear: Bool {
         get {
             let year = self.jex_year
@@ -104,8 +109,8 @@ public extension NSDate {
             }
         }
     }
-
-
+    
+    
     // MARK: - method
     public func isEarlyThan(date: NSDate) -> Bool {
         return self.compare(date) == .OrderedAscending
@@ -113,6 +118,6 @@ public extension NSDate {
     public func isLaterThan(date: NSDate) -> Bool {
         return self.compare(date) == .OrderedDescending
     }
-
-
+    
+    
 }
