@@ -8,7 +8,7 @@
 
 import Foundation
 
-private var jex_componentsKey: String = "jex_componentsKey"
+private var jr_componentsKey: String = "jr_componentsKey"
 
 
 public extension NSDate {
@@ -21,22 +21,22 @@ public extension NSDate {
     }
     
     // MARK: - format and parse
-    public func jex_format(format: String) -> String? {
+    public func jr_format(format: String) -> String? {
         let f = NSDateFormatter()
         f.dateFormat = format
         return f.stringFromDate(self)
     }
     
-    public class func jex_parse(string: String, with format: String) -> NSDate? {
+    public class func jr_parse(string: String, with format: String) -> NSDate? {
         let f = NSDateFormatter()
         f.dateFromString(format)
         return f.dateFromString(string)
     }
     
     // MARK: - components
-    public var jex_dateComponent: NSDateComponents {
+    public var jr_dateComponent: NSDateComponents {
         get {
-            var components = objc_getAssociatedObject(self, &jex_componentsKey) as? NSDateComponents
+            var components = objc_getAssociatedObject(self, &jr_componentsKey) as? NSDateComponents
             if components == nil {
                 components = NSCalendar.currentCalendar().components(
                     [
@@ -51,57 +51,57 @@ public extension NSDate {
                         .WeekOfYear,
                         .WeekOfMonth,
                     ], fromDate: self)
-                objc_setAssociatedObject(self, &jex_componentsKey, components, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(self, &jr_componentsKey, components, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
             return components!
         }
     }
     
-    public var jex_year: Int {
-        return jex_dateComponent.year
+    public var jr_year: Int {
+        return jr_dateComponent.year
     }
-    public var jex_month: Int {
-        return jex_dateComponent.month
+    public var jr_month: Int {
+        return jr_dateComponent.month
     }
-    public var jex_day: Int {
-        return jex_dateComponent.day
+    public var jr_day: Int {
+        return jr_dateComponent.day
     }
     /**
      1:周日-----7：周六
      */
-    public var jex_weekday: Int {
-        return jex_dateComponent.weekday
+    public var jr_weekday: Int {
+        return jr_dateComponent.weekday
     }
-    public var jex_hour: Int {
-        return jex_dateComponent.hour
+    public var jr_hour: Int {
+        return jr_dateComponent.hour
     }
-    public var jex_minute: Int {
-        return jex_dateComponent.minute
+    public var jr_minute: Int {
+        return jr_dateComponent.minute
     }
-    public var jex_second: Int {
-        return jex_dateComponent.second
+    public var jr_second: Int {
+        return jr_dateComponent.second
     }
-    public var jex_weekOfYear: Int {
-        return jex_dateComponent.weekOfYear
+    public var jr_weekOfYear: Int {
+        return jr_dateComponent.weekOfYear
     }
-    public var jex_weekOfMonth: Int {
-        return jex_dateComponent.weekOfMonth
+    public var jr_weekOfMonth: Int {
+        return jr_dateComponent.weekOfMonth
     }
     
-    public var jex_tomorrow: NSDate {
+    public var jr_tomorrow: NSDate {
         get {
             return NSDate(timeInterval: 3600 * 24, sinceDate: self)
         }
     }
-    public var jex_yesterday: NSDate {
+    public var jr_yesterday: NSDate {
         get {
             return NSDate(timeInterval: -3600 * 24, sinceDate: self)
         }
     }
     
-    public var jex_isLeapYear: Bool {
+    public var jr_isLeapYear: Bool {
         get {
-            let year = self.jex_year
+            let year = self.jr_year
             if year % 400 == 0 {
                 return true
             } else {

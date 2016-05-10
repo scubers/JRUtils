@@ -13,11 +13,11 @@ import Foundation
 /**
  *用来替代swift中无法直接使用大括号
  */
-public func jex_block(@noescape closure: Void->Void) {
+public func jr_block(@noescape closure: Void->Void) {
     closure()
 }
 
-public func jex_example(description:String? = "", @noescape closure:Void->Void) {
+public func jr_example(description:String? = "", @noescape closure:Void->Void) {
     print("-----------\(description)------------")
     closure()
 }
@@ -25,7 +25,7 @@ public func jex_example(description:String? = "", @noescape closure:Void->Void) 
 /**
  将一个已知类型转成Optional类型
  */
-public func jex_optional<T>(obj:T) -> T? {
+public func jr_optional<T>(obj:T) -> T? {
     let t : T? = obj
     return t
 }
@@ -33,7 +33,7 @@ public func jex_optional<T>(obj:T) -> T? {
 /**
  直接获取某个对象（不可变）的指针
  */
-public func jex_pointer<T>(inout obj: T) -> UnsafePointer<T> {
+public func jr_pointer<T>(inout obj: T) -> UnsafePointer<T> {
     return withUnsafePointer(&obj) { (pointer) -> UnsafePointer<T> in
         return pointer
     }
@@ -42,7 +42,7 @@ public func jex_pointer<T>(inout obj: T) -> UnsafePointer<T> {
 /**
  直接获取某个对象（可变）的指针
  */
-public func jex_mutablePointer<T>(inout obj: T) -> UnsafeMutablePointer<T> {
+public func jr_mutablePointer<T>(inout obj: T) -> UnsafeMutablePointer<T> {
     return withUnsafeMutablePointer(&obj) { (pointer) -> UnsafeMutablePointer<T> in
         return pointer
     }
@@ -53,7 +53,7 @@ public func jr_notNil(string: String?) -> String {
 }
 
 // MARK: - GCD相关
-public func jex_delay(seconds:Double, queue:dispatch_queue_t, block:dispatch_block_t) {
+public func jr_delay(seconds:Double, queue:dispatch_queue_t, block:dispatch_block_t) {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC))), queue, block)
 }
 

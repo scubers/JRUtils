@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIView {
-    public var jex_x: CGFloat {
+    public var jr_x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -17,7 +17,7 @@ public extension UIView {
             self.frame.origin.x = newValue
         }
     }
-    public var jex_y: CGFloat {
+    public var jr_y: CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -26,7 +26,7 @@ public extension UIView {
         }
     }
 
-    public var jex_width: CGFloat {
+    public var jr_width: CGFloat {
         get {
             return self.frame.size.width
         }
@@ -35,7 +35,7 @@ public extension UIView {
         }
     }
 
-    public var jex_height: CGFloat {
+    public var jr_height: CGFloat {
         get {
             return self.frame.size.height
         }

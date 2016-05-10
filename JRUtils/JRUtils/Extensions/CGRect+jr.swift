@@ -9,19 +9,19 @@
 import UIKit
 
 public extension CGRect {
-    public var jex_centerX: CGFloat {
+    public var jr_centerX: CGFloat {
         get {
             return CGRectGetMidX(self)
         }
     }
-    public var jex_centerY: CGFloat {
+    public var jr_centerY: CGFloat {
         get {
             return CGRectGetMidY(self)
         }
     }
-    public var jex_center: CGPoint {
+    public var jr_center: CGPoint {
         get {
-            return CGPointMake(jex_centerX, jex_centerY)
+            return CGPointMake(jr_centerX, jr_centerY)
         }
     }
 }

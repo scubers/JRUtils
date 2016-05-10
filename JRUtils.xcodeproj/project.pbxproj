@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AAB7C9B1CE18CB100780D06 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9A1CE18CB100780D06 /* TestViewController.m */; };
-		5AAB7C9D1CE18CFF00780D06 /* UIColor+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */; };
+		5AAB7C9D1CE18CFF00780D06 /* UIColor+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9C1CE18CFF00780D06 /* UIColor+jr.swift */; };
 		5AAB7C9F1CE18DEB00780D06 /* JRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB7C9E1CE18DEB00780D06 /* JRUtil.swift */; };
 		A82609611CE0C4E900A522A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609601CE0C4E900A522A1 /* AppDelegate.swift */; };
 		A82609631CE0C4E900A522A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609621CE0C4E900A522A1 /* ViewController.swift */; };
@@ -17,12 +17,12 @@
 		A826096B1CE0C4E900A522A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82609691CE0C4E900A522A1 /* LaunchScreen.storyboard */; };
 		A82609761CE0C4E900A522A1 /* JRUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609751CE0C4E900A522A1 /* JRUtilsTests.swift */; };
 		A82609841CE0C5D600A522A1 /* Discardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609831CE0C5D600A522A1 /* Discardable.swift */; };
-		A82609861CE0C71A00A522A1 /* NSObject+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609851CE0C71A00A522A1 /* NSObject+jex.swift */; };
-		A82609881CE0C89C00A522A1 /* UIView+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609871CE0C89C00A522A1 /* UIView+jex.swift */; };
-		A826098A1CE0C92600A522A1 /* CGRect+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609891CE0C92600A522A1 /* CGRect+jex.swift */; };
-		A826098C1CE0C99600A522A1 /* NSDate+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098B1CE0C99600A522A1 /* NSDate+jex.swift */; };
-		A826098E1CE0D17A00A522A1 /* Int+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098D1CE0D17A00A522A1 /* Int+jex.swift */; };
-		A82609901CE0D1C000A522A1 /* String+jex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098F1CE0D1C000A522A1 /* String+jex.swift */; };
+		A82609861CE0C71A00A522A1 /* NSObject+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609851CE0C71A00A522A1 /* NSObject+jr.swift */; };
+		A82609881CE0C89C00A522A1 /* UIView+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609871CE0C89C00A522A1 /* UIView+jr.swift */; };
+		A826098A1CE0C92600A522A1 /* CGRect+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609891CE0C92600A522A1 /* CGRect+jr.swift */; };
+		A826098C1CE0C99600A522A1 /* NSDate+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098B1CE0C99600A522A1 /* NSDate+jr.swift */; };
+		A826098E1CE0D17A00A522A1 /* Int+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098D1CE0D17A00A522A1 /* Int+jr.swift */; };
+		A82609901CE0D1C000A522A1 /* String+jr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826098F1CE0D1C000A522A1 /* String+jr.swift */; };
 		A82609921CE0D29C00A522A1 /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82609911CE0D29C00A522A1 /* PublicMethod.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		5AAB7C991CE18CB100780D06 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5AAB7C9A1CE18CB100780D06 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+jex.swift"; sourceTree = "<group>"; };
+		5AAB7C9C1CE18CFF00780D06 /* UIColor+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+jr.swift"; sourceTree = "<group>"; };
 		5AAB7C9E1CE18DEB00780D06 /* JRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRUtil.swift; sourceTree = "<group>"; };
 		5AAB7CA01CE18E0700780D06 /* JRUtils-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRUtils-Bridging-Header.h"; sourceTree = "<group>"; };
 		A826095D1CE0C4E900A522A1 /* JRUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,12 +53,12 @@
 		A82609751CE0C4E900A522A1 /* JRUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRUtilsTests.swift; sourceTree = "<group>"; };
 		A82609771CE0C4E900A522A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82609831CE0C5D600A522A1 /* Discardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discardable.swift; sourceTree = "<group>"; };
-		A82609851CE0C71A00A522A1 /* NSObject+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+jex.swift"; sourceTree = "<group>"; };
-		A82609871CE0C89C00A522A1 /* UIView+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+jex.swift"; sourceTree = "<group>"; };
-		A82609891CE0C92600A522A1 /* CGRect+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+jex.swift"; sourceTree = "<group>"; };
-		A826098B1CE0C99600A522A1 /* NSDate+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+jex.swift"; sourceTree = "<group>"; };
-		A826098D1CE0D17A00A522A1 /* Int+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+jex.swift"; sourceTree = "<group>"; };
-		A826098F1CE0D1C000A522A1 /* String+jex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+jex.swift"; sourceTree = "<group>"; };
+		A82609851CE0C71A00A522A1 /* NSObject+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+jr.swift"; sourceTree = "<group>"; };
+		A82609871CE0C89C00A522A1 /* UIView+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+jr.swift"; sourceTree = "<group>"; };
+		A82609891CE0C92600A522A1 /* CGRect+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+jr.swift"; sourceTree = "<group>"; };
+		A826098B1CE0C99600A522A1 /* NSDate+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+jr.swift"; sourceTree = "<group>"; };
+		A826098D1CE0D17A00A522A1 /* Int+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+jr.swift"; sourceTree = "<group>"; };
+		A826098F1CE0D1C000A522A1 /* String+jr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+jr.swift"; sourceTree = "<group>"; };
 		A82609911CE0D29C00A522A1 /* PublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,13 +138,13 @@
 		A82609811CE0C52900A522A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A82609851CE0C71A00A522A1 /* NSObject+jex.swift */,
-				A82609871CE0C89C00A522A1 /* UIView+jex.swift */,
-				A82609891CE0C92600A522A1 /* CGRect+jex.swift */,
-				A826098B1CE0C99600A522A1 /* NSDate+jex.swift */,
-				A826098D1CE0D17A00A522A1 /* Int+jex.swift */,
-				A826098F1CE0D1C000A522A1 /* String+jex.swift */,
-				5AAB7C9C1CE18CFF00780D06 /* UIColor+jex.swift */,
+				A82609851CE0C71A00A522A1 /* NSObject+jr.swift */,
+				A82609871CE0C89C00A522A1 /* UIView+jr.swift */,
+				A82609891CE0C92600A522A1 /* CGRect+jr.swift */,
+				A826098B1CE0C99600A522A1 /* NSDate+jr.swift */,
+				A826098D1CE0D17A00A522A1 /* Int+jr.swift */,
+				A826098F1CE0D1C000A522A1 /* String+jr.swift */,
+				5AAB7C9C1CE18CFF00780D06 /* UIColor+jr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,17 +259,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82609841CE0C5D600A522A1 /* Discardable.swift in Sources */,
-				A826098C1CE0C99600A522A1 /* NSDate+jex.swift in Sources */,
+				A826098C1CE0C99600A522A1 /* NSDate+jr.swift in Sources */,
 				5AAB7C9F1CE18DEB00780D06 /* JRUtil.swift in Sources */,
-				A82609881CE0C89C00A522A1 /* UIView+jex.swift in Sources */,
-				5AAB7C9D1CE18CFF00780D06 /* UIColor+jex.swift in Sources */,
+				A82609881CE0C89C00A522A1 /* UIView+jr.swift in Sources */,
+				5AAB7C9D1CE18CFF00780D06 /* UIColor+jr.swift in Sources */,
 				A82609631CE0C4E900A522A1 /* ViewController.swift in Sources */,
-				A826098A1CE0C92600A522A1 /* CGRect+jex.swift in Sources */,
-				A826098E1CE0D17A00A522A1 /* Int+jex.swift in Sources */,
+				A826098A1CE0C92600A522A1 /* CGRect+jr.swift in Sources */,
+				A826098E1CE0D17A00A522A1 /* Int+jr.swift in Sources */,
 				A82609611CE0C4E900A522A1 /* AppDelegate.swift in Sources */,
 				5AAB7C9B1CE18CB100780D06 /* TestViewController.m in Sources */,
-				A82609901CE0D1C000A522A1 /* String+jex.swift in Sources */,
-				A82609861CE0C71A00A522A1 /* NSObject+jex.swift in Sources */,
+				A82609901CE0D1C000A522A1 /* String+jr.swift in Sources */,
+				A82609861CE0C71A00A522A1 /* NSObject+jr.swift in Sources */,
 				A82609921CE0D29C00A522A1 /* PublicMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

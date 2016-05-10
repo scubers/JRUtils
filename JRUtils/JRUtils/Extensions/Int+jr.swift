@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Int {
-    public func jex_times(f: (i: Int)->()) {
+    public func jr_times(f: (i: Int)->()) {
         for i in 1...self {
             f(i: i)
         }
