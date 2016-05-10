@@ -10,6 +10,30 @@ import Foundation
 
 private var jr_componentsKey: String = "jr_componentsKey"
 
+public enum DateFormat : Int {
+    case yyyy
+    case MM
+    case dd
+    case yyyy_MM
+    case MM_dd
+    case yyyy_MM_dd
+    case yyyy_MM_dd_HH_mm
+    case yyyy_MM_dd_HH_mm_mm
+    
+    func toString(dateSeparator:String = "-", timeSeparator:String = ":") -> String? {
+        switch(self) {
+        case .yyyy:                 return "yyyy"
+        case .MM:                   return "MM"
+        case .dd:                   return "dd"
+        case .yyyy_MM:              return "yyyy\(dateSeparator)MM\(dateSeparator)dd"
+        case .MM_dd:                return "yyyy\(dateSeparator)MM\(dateSeparator)dd"
+        case .yyyy_MM_dd:           return "yyyy\(dateSeparator)MM\(dateSeparator)dd"
+        case .yyyy_MM_dd_HH_mm:     return "yyyy\(dateSeparator)MM\(dateSeparator)dd HH\(timeSeparator)mm"
+        case .yyyy_MM_dd_HH_mm_mm:  return "yyyy\(dateSeparator)MM\(dateSeparator)dd HH\(timeSeparator)mm\(timeSeparator)ss"
+        }
+    }
+}
+
 
 public extension NSDate {
     
@@ -18,6 +42,20 @@ public extension NSDate {
     }
     public static var fmt_yyyy_MM_dd_HH_mm_ss: String {
         get {return "yyyy-MM-dd HH:mm:ss"}
+    }
+    
+    // MARK: - 各种基本秒数（间隔）
+    public static var jr_second: NSTimeInterval {
+        get {return 1}
+    }
+    public static var jr_milliSecond: NSTimeInterval {
+        get {return jr_second / 1000}
+    }
+    public static var jr_minute: NSTimeInterval {
+        get {return jr_second * 60}
+    }
+    public static var jr_hour: NSTimeInterval {
+        get {return jr_minute * 60}
     }
     
     // MARK: - format and parse
@@ -120,4 +158,43 @@ public extension NSDate {
     }
     
     
+}
+
+
+public func < (left: NSDate, right: NSDate) -> Bool {
+    return left.isEarlyThan(right)
+}
+
+public func > (left: NSDate, right: NSDate) -> Bool {
+    return left.isLaterThan(right)
+}
+
+public func == (left: NSDate, right: NSDate) -> Bool {
+    return left.isEqualToDate(right)
+}
+
+public func >= (left: NSDate, right: NSDate) -> Bool {
+    return left.isLaterThan(right) || left.isLaterThan(right)
+}
+
+public func <= (left: NSDate, right: NSDate) -> Bool {
+    return left.isLaterThan(right) || left.isEarlyThan(right)
+}
+
+public func + (left: NSDate, right: NSTimeInterval) -> NSDate {
+    return left.dateByAddingTimeInterval(right)
+}
+
+public func - (left: NSDate, right: NSTimeInterval) -> NSDate {
+    return left.dateByAddingTimeInterval(right * -1)
+}
+
+public func += (inout left: NSDate, right: NSTimeInterval) -> NSDate {
+    left = left.dateByAddingTimeInterval(right)
+    return left
+}
+
+public func -= (inout left: NSDate, right: NSTimeInterval) -> NSDate {
+    left = left.dateByAddingTimeInterval(right * -1)
+    return left
 }
