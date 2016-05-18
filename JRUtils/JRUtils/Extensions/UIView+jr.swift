@@ -43,4 +43,31 @@ public extension UIView {
             self.frame.size.height = newValue
         }
     }
+    
+    public var jr_maxX: CGFloat {
+        get {
+            return jr_width + jr_x
+        }
+    }
+    public var jr_maxY: CGFloat {
+        get {
+            return jr_height + jr_y
+        }
+    }
+    public var jr_centerX: CGFloat {
+        get {
+            return CGRectGetMidX(frame)
+        }
+        set {
+            jr_x = newValue - (jr_width / 2)
+        }
+    }
+    public var jr_centerY: CGFloat {
+        get {
+            return CGRectGetMidY(frame)
+        }
+        set {
+            jr_y = newValue - (jr_height / 2)
+        }
+    }
 }
