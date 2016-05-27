@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 public extension String {
     /**
@@ -14,7 +16,33 @@ public extension String {
      - parameter string: 字符串
      - returns: char *
      */
-    public static func toCStringUnsafePointer(string: UnsafePointer<Int8>) -> UnsafePointer<Int8> {
-        return string
+    public static func toCStringUnsafePointer(stringPointer: UnsafePointer<Int8>) -> UnsafePointer<Int8> {
+        return stringPointer
+    }
+    
+    
+    public var jrcolor: UIColor? {
+        let arr = self.componentsSeparatedByString(",").map {$0.trim()}
+        if arr.count == 3 {
+            return UIColor(red: CGFloat((arr[0] as NSString).floatValue)/255.0,
+                           green: CGFloat((arr[1] as NSString).floatValue)/255.0,
+                           blue: CGFloat((arr[2] as NSString).floatValue)/255.0,
+                           alpha: 1)
+        } else if arr.count == 4 {
+            return UIColor(red: CGFloat((arr[0] as NSString).floatValue)/255.0,
+                           green: CGFloat((arr[1] as NSString).floatValue)/255.0,
+                           blue: CGFloat((arr[2] as NSString).floatValue)/255.0,
+                           alpha: CGFloat((arr[3] as NSString).floatValue))
+        }
+        return nil
+    }
+    
+    public func trim() -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    }
+    
+    public var jrURL: NSURL? {
+        return NSURL(string: self)
     }
 }
+
