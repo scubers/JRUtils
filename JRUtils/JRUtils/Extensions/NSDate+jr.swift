@@ -67,7 +67,7 @@ public extension NSDate {
     
     public class func jr_parse(string: String, with format: String) -> NSDate? {
         let f = NSDateFormatter()
-        f.dateFromString(format)
+        f.dateFormat = format
         return f.dateFromString(string)
     }
     
